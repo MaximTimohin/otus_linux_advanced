@@ -1,0 +1,8 @@
+cloud_id                 = "....79pkq4lkmii...."
+folder_id                = "....gfqikjnfrs5q...."
+zone                     = "ru-central1-a"
+image_id                 = "fd88d4fuk3m9jk5k0dee"
+public_key_path          = "../MaxOtus.pub"
+private_key_path         = "../MaxOtus"
+subnet_id                = "e9bgr3f8em1269draddc"
+service_account_key_file = "terraform.key.json"

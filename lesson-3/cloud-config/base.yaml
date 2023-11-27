@@ -1,0 +1,22 @@
+#cloud-config
+users:
+  - name: yc-user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDNJstucDhCgnroFYV4q9KiUYaYolr3kZVDsy+s0sBbkZ1sbw3jd4/TiS9+qTceCBtd90A8FyVy0VlxUsxqKrLD4vLBdOdenIgWazYn5UNPlprgDUIfpxggLkI/UtAL0s3oY0iKMPsafJH3jHnkSycY+i/nPZ20+S3UMuVv/TKGU0Vsga0lNUkHKTVHfvMwlQ9IidA5lH7RklOeMpsWRuQ7WzAlT+Vxylbl8m1GKKLussoVNO/ZiMBkZDEZE/vQTJJZLskOkAdr9DeRjxipi/cxgbknoIBG5lM8mtAgOGs5jdD8SMu1NmbW61MieOzOgFeuqUr0a9WVUlSgYBuOtKd4Q8OQrDTQs0qXUht0Si7JargX9NA7dZ5BZwA5aUq6I4H40gnVKlfj0nveVIOQRUzCS1lTgLQoCzkgV8qOap3EVWiLXMbgCfXB/1Vg1ivbfeawc7c6fFZwmfUVfll2s2lwCefAxcsthrjzSR8JJ1ImzCCnXsIDU+zSA9lm+Yzu42M= root@tmv-lab
+  - name: maxim
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDNJstucDhCgnroFYV4q9KiUYaYolr3kZVDsy+s0sBbkZ1sbw3jd4/TiS9+qTceCBtd90A8FyVy0VlxUsxqKrLD4vLBdOdenIgWazYn5UNPlprgDUIfpxggLkI/UtAL0s3oY0iKMPsafJH3jHnkSycY+i/nPZ20+S3UMuVv/TKGU0Vsga0lNUkHKTVHfvMwlQ9IidA5lH7RklOeMpsWRuQ7WzAlT+Vxylbl8m1GKKLussoVNO/ZiMBkZDEZE/vQTJJZLskOkAdr9DeRjxipi/cxgbknoIBG5lM8mtAgOGs5jdD8SMu1NmbW61MieOzOgFeuqUr0a9WVUlSgYBuOtKd4Q8OQrDTQs0qXUht0Si7JargX9NA7dZ5BZwA5aUq6I4H40gnVKlfj0nveVIOQRUzCS1lTgLQoCzkgV8qOap3EVWiLXMbgCfXB/1Vg1ivbfeawc7c6fFZwmfUVfll2s2lwCefAxcsthrjzSR8JJ1ImzCCnXsIDU+zSA9lm+Yzu42M= root@tmv-lab
+apt:
+package_update: true
+package_upgrade: true
+packages:
+  - nano
+#runcmd:
+#  - sudo systemctl start nginx
+#  - sudo systemctl enable nginx
