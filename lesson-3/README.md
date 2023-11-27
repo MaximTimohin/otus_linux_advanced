@@ -1,4 +1,4 @@
-#### GFS2 хранилищt в Yandex Cloud + terraform.
+#### GFS2 хранилище на виртуалках в Yandex Cloud + terraform.
 ###  
 
 
